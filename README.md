@@ -43,7 +43,7 @@ grunt.loadNpmTasks("grunt-expand-include");
            /*  header:  // foo  */
            /*  include: $include("foo", { bar: "quux", baz: "quux" })  */
            /*  expand:  $bar  */
-           include: /([ \t]*)include\(\s*"([^"]+)"\s*(?:,\s*(\{(?:[\r\n]|.)*?\}))?\s*\)([ \t]*(\r?\n)?)/g,
+           include: /([ \t]*)include\(\s*["']([^"']+)["']\s*(?:,\s*(\{(?:[\r\n]|.)*?\}))?\s*\)([ \t]*(\r?\n)?)/g,
            define:  /\s*"?([a-zA-Z][a-zA-Z0-9_-]*)"?\s*:\s*"([^"]*)"\s*/g,
            expand:  /\$([a-zA-Z][a-zA-Z0-9_-]*)/g,
            header:  /^(?:\/\*[^!](?:[\r\n]|.)*?\*\/|(?:\/\/[^\r\n]*\r?\n)*)\r?\n/
